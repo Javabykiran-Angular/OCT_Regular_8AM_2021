@@ -1,0 +1,31 @@
+<p>event-binding2 works!</p>
+<!-- 
+template ref variable
+u can get the data as well as u can
+ manipulate the data as per your requiredment
+ It Holds html element object/handle/refrence -->
+
+ <input #inputname 
+ type="text" placeholder="Enter the name.."> <br><br>
+ <button (click)="onClick(inputname)">Send</button>
+ <hr>
+ <input #inputname1 
+ type="text" placeholder="Enter the name.."> <br><br>
+ <button 
+ (click)="onClick1(inputname1.value)">
+ Send</button> <br><br>
+<hr>
+ <label for="">Number1 :: &nbsp;&nbsp;</label>
+ <input #inputnum1 type="text" placeholder="Enter the num1"> <br><br>
+ <label for="">Number2 :: &nbsp;&nbsp;</label>
+ <input #inputnum2 type="text" placeholder="Enter the num2"> <br><br>
+ <button (click)="onAddition(inputnum1.value,inputnum2.value)">
+     Addition</button><br><br>
+ <label for="">Result :: &nbsp;&nbsp;</label>
+ <input type="text" [value]="result"
+ placeholder="Result"> <br><br>
+ <hr>
+
+ <input type="text" 
+ (change)="onChange()" 
+ placeholder="Enter the name ">
