@@ -1,0 +1,21 @@
+<p>event-binding3 works!</p>
+
+<input type="text" (keyup)="OnKeyUp()"
+placeholder="Enter the Name..."> <br><br>
+
+<input type="text" (keydown)="onKeyDown()"
+placeholder="For Key down event..."> <br><br>
+
+<button (click)="result=2+2">Addition</button>
+<br><br>
+<h2>Result is :: {{result}} </h2> 
+<hr>
+<h3>Two way binding</h3>
+
+<!-- ngModel=> It is directive 
+    notation is [(ngModel)]="PropertyName"
+-->
+
+    <input type="text" [(ngModel)]="name"
+    placeholder="Enter the Name"> <br>
+    {{name}}
