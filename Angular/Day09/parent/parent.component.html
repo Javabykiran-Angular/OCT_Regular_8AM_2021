@@ -1,0 +1,11 @@
+<p>parent works!</p>
+
+<h2> Data is :: {{childStrDataReceived}} </h2>
+
+<hr>
+
+<!-- <app-child1 [parentStrData]="strdata"  [parentJsonData]="myjson" ></app-child1> -->
+
+<app-child1 (ChildStrEvent)="childStrDataReceived=$event" >
+
+</app-child1>
