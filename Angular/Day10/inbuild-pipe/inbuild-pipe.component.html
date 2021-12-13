@@ -1,0 +1,81 @@
+<p>inbuild-pipe works!</p>
+<!-- pipe =>It transform your data 
+    without changing its original value 
+    angular.io
+-->
+
+    <!-- syntax=> {{strData | pipename}} -->
+
+    <!-- <h2> {{strData}} </h2>
+    <h2> {{strData|lowercase}} </h2>
+    <h2> {{strData|uppercase}} </h2>
+    <h2> {{strData|titlecase}} </h2> -->
+    <!-- slice => it copy the section of data start & end index -->
+    
+    <!-- <h2> {{strData|slice:2:12}} </h2>
+    <h2> {{strData|slice:2}} </h2>
+    <h2> {{strData|slice}} </h2> -->
+
+    <!-- <h2> {{0.25|percent}} </h2>
+    <h2> {{0.025|percent}} </h2>
+    <h2> {{0.025|percent:'1.1'}} </h2>
+
+    <h2> {{0.091 | percent :'1.2'}} </h2> 
+ 
+     <h2> {{0.0916 | percent :'1.2'}} </h2> 
+   <h2> {{0.091625789 | percent :'1.2'}} </h2>
+    <h2> {{0.091675789 | percent :'1.2'}} </h2>  -->
+
+<!-- 
+     <h2> {{0.25 | currency}} </h2>
+
+     <h2> {{25 | currency : 'INR'}} </h2> 
+     <h2>{{25 | currency :'INR  ':'code'}} </h2>
+     <h2>{{0.25 | currency :'GBP'}} </h2>  -->
+    
+<!-- 
+                    
+   <h2>  {{5.678 | number : '1.2-3'}} </h2>
+         
+     <h2>  {{5.678456 | number : '1.2-3' }} </h2> 
+
+  <h2>  {{5.678556 | number : '2.2-3' }} </h2>
+        
+   <h2>  {{5.6 | number : '2.2-3' }} </h2>
+     
+   <h2>  {{5.555556 | number : '2.2-3' }} </h2> 
+    
+      <h2>{{6.555500 | number : '2.2-3' }}</h2> 
+  
+      <h2> {{65.678556 | number : '1.2-3'}} </h2> 
+           
+  <h2> {{num2 |number : '2.2-3' }} </h2> -->
+
+
+ 
+  <h2> {{mydate}} </h2>
+    
+   <h2> {{mydate | date : 'shortDate'}} </h2>
+   
+  <h2> {{mydate | date : 'dd-MM-yyyy'}} </h2>
+   <h2> {{mydate | date : 'dd/MM/yyyy'}} </h2>
+        
+  <h2> {{mydate | date : 'dd'}} </h2>
+  <h2> {{mydate | date : 'MM'}} </h2>
+ <h2> {{mydate | date : 'yyyy'}} </h2>
+ 
+ <h2> {{mydate | date : 'yy'}} </h2>
+       
+ <h2> {{mydate | date : 'longDate'}} </h2>  
+   
+<!-- chaining of pipe  -->
+ 
+  <h2> {{mydate | date:'longDate' | uppercase }} </h2>
+
+ <h2> {{mydate | date : 'mediumDate' }} </h2>
+ 
+ <h2> {{mydate | date : 'hh:mm:ss'}} </h2> 
+
+<h2> {{mydate | date : 'hh:mm'}} </h2>   
+ 
+
